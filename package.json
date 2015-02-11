@@ -1,0 +1,19 @@
+{
+  "name": "protractor-cucumber-example",
+  "description": "Example of using Protractor with Cucumber and Page Objects",
+  "repository": "https://github.com/mlev/protractor-cucumber-example",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "protractor": "^1.1.1",
+    "cucumber": "~0.4.7",
+    "chai": "~1.10.0",
+    "chai-as-promised": "~4.1.1"
+  },
+  "scripts": {
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor protractor.conf.js"
+  }
+}
