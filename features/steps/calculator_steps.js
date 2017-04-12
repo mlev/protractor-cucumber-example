@@ -5,11 +5,8 @@ var CalculatorSteps = function() {
 
   var CalculatorPage = require("../pages/calculator_page.js");
 
-  this.World = function World(callback) {
-    var world = {
-      page: new CalculatorPage()
-    };
-    callback(world);
+  this.World = function MyWorld() {
+    this.page = new CalculatorPage();
   };
 
   this.Given('The calculator is open', function (callback) {
